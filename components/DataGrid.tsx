@@ -34,6 +34,7 @@ function DataGrid() {
         percentageChange={data?.remainingChange}
         icon={FaPiggyBank}
         dateRange={dateRangeLabel}
+        variant={"default"}
       />
       <DataCard
         title="Income"
@@ -41,6 +42,7 @@ function DataGrid() {
         percentageChange={data?.incomeChange}
         icon={FaArrowTrendUp}
         dateRange={dateRangeLabel}
+        variant={"success"}
       />
       <DataCard
         title="Expenses"
@@ -48,6 +50,7 @@ function DataGrid() {
         percentageChange={data?.expensesChange}
         icon={FaArrowTrendDown}
         dateRange={dateRangeLabel}
+        variant={"danger"}
       />
     </div>
   );
